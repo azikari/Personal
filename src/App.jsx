@@ -6,9 +6,10 @@ import { Routes, Route } from 'react-router-dom'
 import Layout from './components/layout/Layout'
 import Home from './pages/home/Home'
 import About from './pages/about/About'
+import Services from './pages/services/Services'
+import NotFound from './pages/notfound/NotFound'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
@@ -16,8 +17,15 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
+          <Route path="services" element={<Services />} />
         </Route>
+
+        <Route path='*' element={<NotFound />} />
+
       </Routes>
+
+
+      
 
     </>
   )
