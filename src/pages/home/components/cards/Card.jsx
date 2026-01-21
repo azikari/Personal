@@ -3,7 +3,7 @@ import React from 'react';
 const Card = ({ order, title, subtitle, price, features }) => {
   return (
     <div
-      className="max-w-sm p-8 flex flex-col items-center text-center min-h-[420px] bg:hover:shadow-lg hover:scale-105 transition transform duration-300 rounded-lg mx-4"
+      className="max-w-sm p-8 flex flex-col items-center text-center min-h-[420px] bg:hover:shadow-lg hover:scale-105 transition transform duration-300"
       style={{ backgroundColor: 'rgb(249,249,255)' }}
     >
       <div
@@ -20,6 +20,7 @@ const Card = ({ order, title, subtitle, price, features }) => {
 
       <h3 className="text-xl font-semibold mb-2 ">{title}</h3>
       <p className="text-gray-500 mb-8">{subtitle}</p>
+       
 
       {features && features.length > 0 && (
         <div className="mb-6 w-full text-gray-500">

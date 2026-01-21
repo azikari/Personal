@@ -9,6 +9,7 @@ import About from './pages/about/About'
 import Services from './pages/services/Services'
 import NotFound from './pages/notfound/NotFound'
 import Counter from './pages/counter/Counter'
+import Calculator from './pages/calculator/Calculator'
 
 function App() {
 
@@ -19,9 +20,11 @@ function App() {
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="services" element={<Services />} />
-          <Route path="counter" element={<Counter/>} />
+        
         </Route>
 
+        <Route path="counter" element={<Counter/>} />
+        <Route path="calculator" element={<Calculator/>} />
         <Route path='*' element={<NotFound />} />
 
       </Routes>
