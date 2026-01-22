@@ -5,6 +5,7 @@ import Services from './components/Services'
 import Card from './components/cards/Card'
 import { Features } from 'tailwindcss'
 import Title from '../../components/title/Title'
+import Counter from './components/counter/Counter'
 
 const data = [
   {
@@ -61,6 +62,8 @@ const Home = () => {
     <div>
       <Hero />
       <Section />
+      <Counter/>
+
       <Services />
 
       <div className="container mx-auto px-6 text-center my-20 flex flex-col items-center">

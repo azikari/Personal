@@ -10,6 +10,7 @@ import Services from './pages/services/Services'
 import NotFound from './pages/notfound/NotFound'
 import Counter from './pages/counter/Counter'
 import Calculator from './pages/calculator/Calculator'
+import Lesson from './pages/lesson3/Lesson'
 
 function App() {
 
@@ -20,12 +21,15 @@ function App() {
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="services" element={<Services />} />
+          <Route path="lesson3" element={<Lesson />} />
+          
         
         </Route>
 
         <Route path="counter" element={<Counter/>} />
         <Route path="calculator" element={<Calculator/>} />
         <Route path='*' element={<NotFound />} />
+
 
       </Routes>
 
