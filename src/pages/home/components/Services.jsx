@@ -6,7 +6,7 @@ import Title from '../../../components/title/Title'
 
 const Services = () => {
   return (
-    <section className="bg-white pb-20 max-w-6xl mx-auto">
+    <section className="bg-white pb-20 max-w-6xl mx-auto mt-32 mb-18">
       <div className="container mx-auto px-6 text-center">
         <Title title={"My Offered Services"} subTitle={"At about this time of year, some months after New Year’s resolutions have been made and kept, or made and neglected."}/>
 

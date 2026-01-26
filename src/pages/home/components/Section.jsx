@@ -3,7 +3,7 @@ import about from '../../../assets/images/about-img.png';
 
 const Section = () => {
   return (
-    <div className="bg-white h-[600px]">
+    <div className="bg-white h-[500px]">
       <section className="flex items-start gap-18 container w-6xl mx-auto py-16 px-6 h-full">
         <div className="">
           <img src={about} alt="About" className="w-[600px] object-contain" />
