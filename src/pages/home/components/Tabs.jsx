@@ -36,43 +36,98 @@ const Tabs = () => {
                         </button>
                     ))}
                 </div>
-
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-6">
 
                     {activeTab === 'ALL' && (
                         <>
-                            <img src={p1} alt="" className="w-full h-80 object-cover rounded-lg" />
-                            <img src={p2} alt="" className="w-full h-80 object-cover rounded-lg" />
-                            <img src={p3} alt="" className="w-full h-80 object-cover rounded-lg" />
-                            <img src={p4} alt="" className="w-full h-80 object-cover rounded-lg" />
-                            <img src={p5} alt="" className="w-full h-80 object-cover rounded-lg" />
-                            <img src={p6} alt="" className="w-full h-80 object-cover rounded-lg" />
+                            <div className="text-center space-y-2">
+                                <img src={p1} alt="" className="w-full h-80 object-cover rounded-lg" />
+                                <h3 className="text-lg font-semibold text-black">2D Vinyl Design</h3>
+                                <p className="text-sm text-gray-500">Vector</p>
+                            </div>
+
+                            <div className="text-center space-y-2">
+                                <img src={p2} alt="" className="w-full h-80 object-cover rounded-lg" />
+                                <h3 className="text-lg font-semibold text-black">2D Vinyl Design</h3>
+                                <p className="text-sm text-gray-500">Vector</p>
+                            </div>
+
+                            <div className="text-center space-y-2">
+                                <img src={p3} alt="" className="w-full h-80 object-cover rounded-lg" />
+                                <h3 className="text-lg font-semibold text-black">Creative Poster Design</h3>
+                                <p className="text-sm text-gray-500">Agency</p>
+                            </div>
+
+                            <div className="text-center space-y-2">
+                                <img src={p4} alt="" className="w-full h-80 object-cover rounded-lg" />
+                                <h3 className="text-lg font-semibold text-black">Embosed Logo Design</h3>
+                                <p className="text-sm text-gray-500">Portal</p>
+                            </div>
+
+                            <div className="text-center space-y-2">
+                                <img src={p5} alt="" className="w-full h-80 object-cover rounded-lg" />
+                                <h3 className="text-lg font-semibold text-black">3D Helmet Design</h3>
+                                <p className="text-sm text-gray-500">Vector</p>
+                            </div>
+
+                            <div className="text-center space-y-2">
+                                <img src={p6} alt="" className="w-full h-80 object-cover rounded-lg" />
+                                <h3 className="text-lg font-semibold text-black">2D Vinyl Design</h3>
+                                <p className="text-sm text-gray-500">Raster</p>
+                            </div>
                         </>
                     )}
 
                     {activeTab === 'VECTOR' && (
                         <>
-                            <img src={p1} alt="" className="w-full h-80 object-cover rounded-lg" />
-                            <img src={p5} alt="" className="w-full h-80 object-cover rounded-lg" />
+                            <div className="text-center space-y-2">
+                                <img src={p1} alt="" className="w-full h-80 object-cover rounded-lg" />
+                                <h3 className="text-lg font-semibold text-black">2D Vinyl Design</h3>
+                                <p className="text-sm text-gray-500">Vector</p>
+                            </div>
+
+                            <div className="text-center space-y-2">
+                                <img src={p5} alt="" className="w-full h-80 object-cover rounded-lg" />
+                                <h3 className="text-lg font-semibold text-black">3D Helmet Design</h3>
+                                <p className="text-sm text-gray-500">Vector</p>
+                            </div>
                         </>
                     )}
 
                     {activeTab === 'RASTER' && (
                         <>
-                            <img src={p2} alt="" className="w-full h-80 object-cover rounded-lg" />
-                            <img src={p6} alt="" className="w-full h-80 object-cover rounded-lg" />
+                            <div className="text-center space-y-2">
+                                <img src={p2} alt="" className="w-full h-80 object-cover rounded-lg" />
+                                <h3 className="text-lg font-semibold text-black">2D Vinyl Design</h3>
+                                <p className="text-sm text-gray-500">Raster</p>
+                            </div>
+
+                            <div className="text-center space-y-2">
+                                <img src={p6} alt="" className="w-full h-80 object-cover rounded-lg" />
+                                <h3 className="text-lg font-semibold text-black">2D Vinyl Design</h3>
+                                <p className="text-sm text-gray-500">Raster</p>
+                            </div>
                         </>
                     )}
 
                     {activeTab === 'UI/UX' && (
-                        <img src={p3} alt="" className="w-full h-80 object-cover rounded-lg" />
+                        <div className="text-center space-y-2">
+                            <img src={p3} alt="" className="w-full h-80 object-cover rounded-lg" />
+                            <h3 className="text-lg font-semibold text-black">Creative Poster Design</h3>
+                            <p className="text-sm text-gray-500">Agency</p>
+                        </div>
                     )}
 
                     {activeTab === 'PRINTING' && (
-                        <img src={p4} alt="" className="w-full h-80 object-cover rounded-lg" />
+                        <div className="text-center space-y-2">
+                            <img src={p4} alt="" className="w-full h-80 object-cover rounded-lg" />
+                            <h3 className="text-lg font-semibold text-black">Embosed Logo Design</h3>
+                            <p className="text-sm text-gray-500">Portal</p>
+                        </div>
                     )}
 
                 </div>
+
             </section>
         </div>
     );

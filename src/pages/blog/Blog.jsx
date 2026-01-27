@@ -30,8 +30,11 @@ const Blog = () => {
     }, [])
 
     return (
-        <div>
-            <h1>Fake APi axios</h1>
+        <div className='max-w-7xl mx-auto px-4 py-8'>
+            <h2 className="text-4xl font-bold text-black mb-4 text-center">
+                Fake Store Products
+            </h2>
+
             {loading && <div role="status">
                 <svg aria-hidden="true" class="w-8 h-8 text-neutral-tertiary animate-spin fill-brand" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z" fill="currentColor" />
@@ -40,20 +43,36 @@ const Blog = () => {
                 <span class="sr-only">Loading...</span>
             </div>}
             {error && <div>{error?.message}</div>}
-            <div className="flex  gap-4 ">
-                 {data.map((item)=>{
-                return(
-                    <div className=' flex flex-col gap-2 border border-gray-300 p-4' key={item.id}>
-                        <h1>{item.title}</h1>
-                        <p>{item.description}</p>
-                        <p>{item.price}</p>
-                        <img src={item.image} alt="" />
-                    </div>
-                )
-            })}
-            </div>
-           
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                {data.map(item => (
+                    <div
+                        key={item.id}
+                        className="rounded-2xl bg-white p-5 shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col"
+                    >
+                        
+                        <img
+                            src={item.image}
+                            alt={item.title}
+                            className="h-64 object-contain mb-4"
+                        />
 
+                        <h2 className="font-semibold text-lg line-clamp-2 mb-2">
+                            {item.title}
+                        </h2>
+
+                        <p className="text-base text-gray-600 leading-relaxed line-clamp-4 mb-6">
+                            {item.description}
+                        </p>
+
+                        <div className="mt-auto flex items-center justify-between">
+                            <span className="text-xl font-bold">${item.price}</span>
+                            <button className="bg-blue-600 text-white px-5 py-3 rounded-xl text-base font-semibold hover:bg-blue-700 transition-all">
+                                Buy
+                            </button>
+                        </div>
+                    </div>
+                ))}
+            </div>
         </div>
     )
 }
