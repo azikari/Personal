@@ -9,6 +9,7 @@ import Title from '../../components/title/Title'
 import Counter from './components/counter/Counter'
 import { data } from './data/data'
 import { blogData } from './data/blog'
+import Tabs from './components/Tabs'
 
 
 const Home = () => {
@@ -18,6 +19,7 @@ const Home = () => {
       <Section />
       <Services />
       <Counter />
+      <Tabs />
 
       <div className="container mx-auto px-6 text-center my-20 flex flex-col items-center mb-32">
         <Title title={"Choose Your Plan"} subTitle={"When someone does something that they know that they shouldn’t do, did they."} />
