@@ -1,5 +1,5 @@
 import React from 'react'
-import Banner from '../../components/banner/Banner'
+// import Banner from '../../components/banner/Banner'
 import Section from '../home/components/Section'
 import Services from '../home/components/Services'
 import Counter from '../home/components/counter/Counter'
@@ -10,7 +10,7 @@ import { data } from '../home/data/data'
 const ServicesPage = () => {
   return (
     <div>
-      <Banner title="Services" subtitle={"Services"} />
+      {/* <Banner title="Services" subtitle={"Services"} /> */}
       <Services />
       <Counter />
 
