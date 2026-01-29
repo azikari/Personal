@@ -14,6 +14,7 @@ import Portfolio from './pages/portfolio/Portfolio'
 import Pricing from './pages/pricing/Pricing'
 import Contact from './pages/contact/Contact'
 import Blog from './pages/blog/Blog'
+import BlogPost from './pages/blog/BlogPost'
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
           <Route path="pricing" element={<Pricing />} />
           <Route path="contact" element={<Contact />} />
           <Route path="blog" element={<Blog />} />
+          <Route path='blog/:id' element={<BlogPost/>}/>
           
         
         </Route>

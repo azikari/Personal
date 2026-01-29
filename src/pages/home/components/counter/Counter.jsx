@@ -87,30 +87,32 @@ const Counter = () => {
     }, [])
 
     return (
-        <div className=" bg-gradient-to-r from-indigo-500/70 to-sky-400/70 mb-32">
-            <div className='flex item-center justify-center text-white container mx-auto gap-40 px-10 py-32'>
+        <div className="bg-gradient-to-r from-indigo-500/70 to-sky-400/70 mb-32">
+            <div className="flex flex-col md:flex-row items-center justify-center text-white container mx-auto gap-40 px-10 py-32">
 
-                <div className="flex flex-col justify-center items-center  ">
-                    <p className='text-[40px] font-bold'>{projectCount}</p>
-                    <p className='text-md'>Projects Completed</p>
+                <div className="flex flex-col justify-center items-center">
+                    <p className="text-[40px] font-bold">{projectCount}</p>
+                    <p className="text-md">Projects Completed</p>
                 </div>
 
-                <div className="flex flex-col justify-center items-center  ">
-                    <p className='text-[40px] font-bold'>{clientCount}</p>
-                    <p className='text-md'>Happy Clients</p>
+                <div className="flex flex-col justify-center items-center">
+                    <p className="text-[40px] font-bold">{clientCount}</p>
+                    <p className="text-md">Happy Clients</p>
                 </div>
 
-                <div className="flex flex-col justify-center items-center  ">
-                    <p className='text-[40px] font-bold'>{coffeeCount}</p>
-                    <p className='text-md'>Cups of Coffee</p>
+                <div className="flex flex-col justify-center items-center">
+                    <p className="text-[40px] font-bold">{coffeeCount}</p>
+                    <p className="text-md">Cups of Coffee</p>
                 </div>
 
-                <div className="flex flex-col justify-center items-center  ">
-                    <p className='text-[40px] font-bold'>{professionalCount}</p>
-                    <p className='text-md'>Real Professionals</p>
+                <div className="flex flex-col justify-center items-center">
+                    <p className="text-[40px] font-bold">{professionalCount}</p>
+                    <p className="text-md">Real Professionals</p>
                 </div>
+
             </div>
         </div>
+
 
     )
 }

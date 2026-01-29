@@ -41,37 +41,37 @@ const Tabs = () => {
                     {activeTab === 'ALL' && (
                         <>
                             <div className="text-center space-y-2">
-                                <img src={p1} alt="" className="w-full h-80 object-cover rounded-lg" />
+                                <img src={p1} alt="" className="w-full h-[22rem] object-cover rounded-lg" />
                                 <h3 className="text-lg font-semibold text-black">2D Vinyl Design</h3>
                                 <p className="text-sm text-gray-500">Vector</p>
                             </div>
 
                             <div className="text-center space-y-2">
-                                <img src={p2} alt="" className="w-full h-80 object-cover rounded-lg" />
+                                <img src={p2} alt="" className="w-full h-[22rem] object-cover rounded-lg" />
                                 <h3 className="text-lg font-semibold text-black">2D Vinyl Design</h3>
                                 <p className="text-sm text-gray-500">Vector</p>
                             </div>
 
                             <div className="text-center space-y-2">
-                                <img src={p3} alt="" className="w-full h-80 object-cover rounded-lg" />
+                                <img src={p3} alt="" className="w-full h-[22rem] object-cover rounded-lg" />
                                 <h3 className="text-lg font-semibold text-black">Creative Poster Design</h3>
                                 <p className="text-sm text-gray-500">Agency</p>
                             </div>
 
                             <div className="text-center space-y-2">
-                                <img src={p4} alt="" className="w-full h-80 object-cover rounded-lg" />
+                                <img src={p4} alt="" className="w-full h-[22rem] object-cover rounded-lg" />
                                 <h3 className="text-lg font-semibold text-black">Embosed Logo Design</h3>
                                 <p className="text-sm text-gray-500">Portal</p>
                             </div>
 
                             <div className="text-center space-y-2">
-                                <img src={p5} alt="" className="w-full h-80 object-cover rounded-lg" />
+                                <img src={p5} alt="" className="w-full h-[22rem] object-cover rounded-lg" />
                                 <h3 className="text-lg font-semibold text-black">3D Helmet Design</h3>
                                 <p className="text-sm text-gray-500">Vector</p>
                             </div>
 
                             <div className="text-center space-y-2">
-                                <img src={p6} alt="" className="w-full h-80 object-cover rounded-lg" />
+                                <img src={p6} alt="" className="w-full h-[22rem] object-cover rounded-lg" />
                                 <h3 className="text-lg font-semibold text-black">2D Vinyl Design</h3>
                                 <p className="text-sm text-gray-500">Raster</p>
                             </div>
@@ -81,13 +81,13 @@ const Tabs = () => {
                     {activeTab === 'VECTOR' && (
                         <>
                             <div className="text-center space-y-2">
-                                <img src={p1} alt="" className="w-full h-80 object-cover rounded-lg" />
+                                <img src={p1} alt="" className="w-full h-[22rem] object-cover rounded-lg" />
                                 <h3 className="text-lg font-semibold text-black">2D Vinyl Design</h3>
                                 <p className="text-sm text-gray-500">Vector</p>
                             </div>
 
                             <div className="text-center space-y-2">
-                                <img src={p5} alt="" className="w-full h-80 object-cover rounded-lg" />
+                                <img src={p5} alt="" className="w-full h-[22rem] object-cover rounded-lg" />
                                 <h3 className="text-lg font-semibold text-black">3D Helmet Design</h3>
                                 <p className="text-sm text-gray-500">Vector</p>
                             </div>
@@ -97,13 +97,13 @@ const Tabs = () => {
                     {activeTab === 'RASTER' && (
                         <>
                             <div className="text-center space-y-2">
-                                <img src={p2} alt="" className="w-full h-80 object-cover rounded-lg" />
+                                <img src={p2} alt="" className="w-full h-[22rem] object-cover rounded-lg" />
                                 <h3 className="text-lg font-semibold text-black">2D Vinyl Design</h3>
                                 <p className="text-sm text-gray-500">Raster</p>
                             </div>
 
                             <div className="text-center space-y-2">
-                                <img src={p6} alt="" className="w-full h-80 object-cover rounded-lg" />
+                                <img src={p6} alt="" className="w-full h-[22rem] object-cover rounded-lg" />
                                 <h3 className="text-lg font-semibold text-black">2D Vinyl Design</h3>
                                 <p className="text-sm text-gray-500">Raster</p>
                             </div>
@@ -112,7 +112,7 @@ const Tabs = () => {
 
                     {activeTab === 'UI/UX' && (
                         <div className="text-center space-y-2">
-                            <img src={p3} alt="" className="w-full h-80 object-cover rounded-lg" />
+                            <img src={p3} alt="" className="w-full h-[22rem] object-cover rounded-lg" />
                             <h3 className="text-lg font-semibold text-black">Creative Poster Design</h3>
                             <p className="text-sm text-gray-500">Agency</p>
                         </div>
@@ -120,7 +120,7 @@ const Tabs = () => {
 
                     {activeTab === 'PRINTING' && (
                         <div className="text-center space-y-2">
-                            <img src={p4} alt="" className="w-full h-80 object-cover rounded-lg" />
+                            <img src={p4} alt="" className="w-full h-[22rem] object-cover rounded-lg" />
                             <h3 className="text-lg font-semibold text-black">Embosed Logo Design</h3>
                             <p className="text-sm text-gray-500">Portal</p>
                         </div>
@@ -133,4 +133,4 @@ const Tabs = () => {
     );
 };
 
-export default Tabs;
+export default Tabs

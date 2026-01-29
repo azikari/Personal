@@ -39,4 +39,4 @@ const Card = ({ order, title, subtitle, price, features }) => {
   );
 };
 
-export default Card;
+export default Card

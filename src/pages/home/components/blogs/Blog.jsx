@@ -49,4 +49,4 @@ const Blog = ({ image, authorImage, authorName, date, likes, comments, title, su
     );
 };
 
-export default Blog;
+export default Blog
