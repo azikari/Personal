@@ -1,13 +1,13 @@
 import React from 'react'
-import Banner from '../../components/banner/Banner'
 import { HiOutlineHome } from "react-icons/hi2";
 import { BsTelephone } from "react-icons/bs";
 import { GoMail } from "react-icons/go";
+// import Banner from '../../components/banner/Banner';
 
 const Contact = () => {
   return (
     <div>
-      <Banner title="Contact Us" subtitle="Contact Us" />
+      {/* <Banner title="Contact Us" subtitle="Contact Us" /> */}
 
       <section className="bg-gray-50 py-16">
         <div className="max-w-6xl mx-auto px-4">
